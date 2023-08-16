@@ -1,0 +1,168 @@
+<DOCTYPE! html>
+<html>	
+	<head>
+		<title>HTML(Hyper Text Markup Language)</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<h1>HTML REVISION NOTES</h1>
+				<ul>
+					<li><a href="#html">HTML Elements </a></li>
+					<li><a href="#body">HTML Body</a></li>
+					<li><a href="#para">HTML Paragraph</a> </li>
+					<li><a href="#txt">HTML Text Formating</a></li>
+					<li><a href="#list">HTML List</a></li>
+					<li><a href="#img">HTML Image</a></li>
+					<li><a href="#link">HTML Link</a></li>
+
+				</ul>
+			</nav>
+		</header>
+		<h1> CodeChef Notes- Course: Learn HTNL and CSS</h1>
+		<article>
+		<h2>HTML(Hyper Text Markup Language)</h2>
+		
+		<section id="html">
+			<h2>HTML consists of elements</h2>
+			<p><blockquote>&lt;h1&gt;My name is Anthony Gonsalves &lt;&frasl;h1&gt;
+			</blockquote>
+			In the code above,
+				<ul>
+					<li>Anything contained in the boxes '&lt;&gt;' is known as a <b>Tag</b></li>
+					<li>&lt;h1&gt; is known as an <b>Opening tag</b></li>
+					<li>'My name is Anthony Gonsalves' is the <b>Content</b></li>
+					<li>&lt;&frasl;h1&gt is known as the <b>Closing Tag</b></li>
+					<li>'&lt;h1&gt; My name is Anthony Gonsalves &lt;&frasl;h1&gt'- the entire 
+					unit togetger is called an <b>HTML Element </b></li>
+				</ul>
+			</p>
+		</section>
+		<section id="body">	
+			<h2>Our HTML Skeleton actually has a Body</h2>
+			<p>The body consist of the following - the &lt;header&gt;, &lt;main&gt; and &lt;footer&gt; respectively.<br>
+			Let us look at the simplified travel blog example that we looked at earlier.<br>
+			Once the &lt;body&gt; of an HTML file has been defined, we can add multiple components to our website 
+				<ul>
+					<li>Text in the form of headings, paragraph, sections</li>
+					<li>Images and Videos</li>
+					<li>Buttons and forms</li>
+				</ul>
+		</p>
+		</Section>
+		<section id="para">
+		<h2>To display text in HTMl - we usually use the 'Paragraphs' with the tags &lt;p&gt; &lt;&frasl;p&gt; </h2>
+			<ul>
+				<li>Multiple sentence can be typed between the opening and closing paragraph tags
+					<blockquote>&lt;p&gt; This is first sentence. Meny other sentences can be written here.</blockquote></li>
+				<li>To separate Paragraphe - we need separate dedicated opening and closing &lt;p&gt; tags for each para
+					<blockquote>&lt p &gt Para 1 with its own content.&lt; &frasl;p &gt;<br>
+					            &lt p &gt Para 1 with its own content.&lt; &frasl;p &gt;</blockquote></li>
+				<li>To separate para and add a space between then- we use something called a 'break' tag &lt;br&gt;. Interestingly,
+					&lt;br&gt; does <b>NOT</b> need a closing tag </li>
+					<blockquote>&lt;p&gt; Para 1 with some content &lt;&frasl;p&gt;
+								&lt;b&gt;
+								&lt;p&gt; Para 2 with some content &lt;&frasl;p&gt;
+				<li>'break' tag can also be used to add a new line within a para.
+					<blockquote>&lt;p&gt; This is the 1st sentence.&lt;br&gt; This is the 2nd sentence.&lt;br&gt; This is the 3rd sentence.&lt;br&gt; 
+			</ul>
+		</section>		
+				I am sure you got the point by now &lt;&frasl;p&gt;</blockquote></li>				
+		<section id="txt">
+			<h2>Text formating in HTML</h2>
+			<ul>
+				<li>&lt;b&gt;This is bold text.&lt;&frasl;b&gt;</li>
+				<li>&lt;strong&gt;This is also bold text.&lt;&frasl;strong&gt;</li>
+				<li>&lt;i&gt;This is italicized text.&lt;&frasl;i&gt</li>
+				<li>&lt;em&gt;This is also italicized text.&lt;&frasl;em&gt;</li>
+				<li>&lt;u&gt;This is underlined text.&lt;&frasl;u&gt;</li>
+				<li>&lt;s&gt;This is strikethrough text.&lt;&frasl;s&gt;</li>
+				<p>There are thousends of such options.
+			</ul>
+		</section>
+	    
+		
+		<section id="list">
+		<h2>HTML also allows us to generate Lists</h2>
+		
+			<ul>
+				<li>Unordered list are created using the &lt; ul &gt; tag. An unordered list has individual items with a bullet point.
+					<blockquote>
+						&lt; ul &gt; <br>
+									&lt; li &gt; Athens &lt; &frasl; li &gt;
+									<br>
+									&lt; li &gt; Volcanic island &lt; &frasl; li &gt;
+									<br>
+							   		&lt; &frasl; ul &gt;
+					</blockquote>
+
+					<div>Will apppear as 
+						<ul>
+							<li>Athens</li>
+							<li>Volcanic islands</li>
+						</ul>	
+					</div>
+				</li>			
+				<li>Ordered lists are created using the &lt;ol&gt; tags. Insted of the bullet points- here the content is ordered with numbers
+					<blockquote>&lt; ol &gt;<br>
+									&lt; li &gt; Athens &lt; &frasl; li &gt;
+									<br>
+									&lt; li &gt; Volcanic islands &lt; &frasl; li &gt;
+									<br>
+						        &lt; &frasl;ol&gt;
+				    </blockquote>
+					<div>Will appear as 
+						<ol>
+							<li>Athens</li>
+							<li>Volcanic islands</li>
+						</ol>
+					</div>
+			    </li>
+				<li>
+					The &lt; li &gt; tag is an Html element used to create a list item in an ordered (&lt;ol&gt;) or unordered(&lt; ul &gt;) list.
+					"li" stands for "list item".
+				</li>	            	
+			</ul>
+		</section>	
+	
+		
+		<section id="img">
+			<h2>The &lt;img&gt; tag allows you to add image to your webpage.</h2>
+
+			<ul>
+				<li>&lt;img&gt; is a self closing tag.</li>
+				<li>The &lt;img&gt; has an attribute <b>src</b>. src must be set as a URL where the image is stored.</li>
+				<li> Sample syntax for using the &lt;img&gt; tag is as follows.</li>
+					<blockquote>
+						&lt; src="https://cnd.codechef.com/learning/webdev" &gt;
+					</blockquote>
+				<li>Usually an alt attribute is also added to an image tag 
+					<ul>
+						<li>If an image fails to load - it shows the discription of the image.</li>
+						<li>Screen reading software and search engine also read the description of the image as they cannot
+							'see' the image
+						</li>
+						<li>Sample syntax of using the alt attribute </li>
+							<blockquote>
+								&lt; img src="https://cdn.codechef.com/Learning/Greece.webp" alt='Greece map'&gt;
+							</blockquote>
+					</ul>
+				</li>
+			</ul>
+		</section>
+		<section id ="link">
+			<h2>The &lt; h2 &gt; tag allows links to a webpage</h2>
+
+			<p>The sample syntax used for this is </p>
+				<blockquote>
+					&lt; a href="https://en.wikipedia.org/wiki/Greece">Greece wiki</a> &gt;
+				</blockquote>
+			 n
+		</section>
+	
+	<footer>
+		<a href="#">Back To Top</a>
+	</footer>
+	</body>
+</html>
