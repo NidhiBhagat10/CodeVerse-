@@ -1,9 +1,175 @@
+/**** common for all*****/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
 body{
-	background-color: #fbfdde;
+	background: linear-gradient(to top left,#ffcccc,#ffec99);
 }
+.header {
+	display: flex;
+	align-items: center;
+}
+
+.cv-logo{
+	height: 100px;
+	width: 100px;
+	margin: 0 10px;
+}
+
+.nav-menu{
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.nav-list{
+	margin: 0 60px;
+}
+
+main {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/**** index.html ****/
+
+.day5-aside {
+	margin: 1px;
+}
+
+.blog-aside {
+	padding: 2rem;
+	background: black;
+	display: inline;
+	float: right;
+	width: 2rem;
+	height: 2rem;
+}
+
+.code {
+	margin-left: 30px;
+	padding: 20px;
+	background-color: rgb(254, 254, 234);
+	color: rgb(101, 136, 167);
+}
+
 h1{
-	background-color:rgb(221, 255, 167)
+	color: rgb(79, 3, 48);
+	font-weight: 700;
+
 }
-h2{
-	color: orangered;
+h2 {
+	color: rgb(234, 85, 85);
+}
+
+h3 {
+	
+	color: rgb(79, 173, 255);
+}
+
+img {
+	width: 600px;
+}
+
+span {
+	padding: 40px;
+}
+
+footer {
+	background: beige;
+	padding: 20px;
+}
+
+/*
+rgb(136, 176, 211)
+background-color:rgba(83, 128, 170, 0.9);
+*/
+.logo-image {
+	height: 5rem;
+	width: 5rem;
+	border-radius: 180px;
+	padding: 0;
+}
+
+.nav-list-link {
+	text-decoration: none;
+}
+
+.nav-menu {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+}
+
+.nav-container {
+	display: flex;
+}
+
+.nav {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.nav-button {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.html {
+	padding-bottom: 20px;
+}
+
+.html-image-link {
+	height: 18rem;
+	width: 18rem;
+	position: relative;
+	border-radius: 2rem;
+	display: inline;
+	float: right;
+
+}
+
+.html-discription {
+	list-style-type: circle;
+}
+
+.css-image-link {
+	height: 18rem;
+	width: 22rem;
+	border-radius: 2rem;
+	display: inline;
+	float: right;
+	clear: both;
+}
+
+.css-discription {
+	list-style-type: circle;
+}
+
+.blog-body {
+	background-color: rgba(83, 128, 170, 0.9);
+}
+
+.topic-container {
+	color: black;
+	background-color: white;
+	margin: 0;
+	padding: 1rem;
+}
+
+.major-topic-container {
+	border: .1rem solid red;
+	padding: 20px;
+}
+
+.minor-topic-container {
+	border: .1rem solid red;
+	padding: 20px;
+}
+
+.struggle-cycle {
+	display: block;
 }
