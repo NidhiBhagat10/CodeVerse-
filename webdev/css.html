@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS: Cascading Style Sheet</title>
+    <link rel="stylesheet" href="/CodeVerse/css/style.css">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>CodeChef Revision Notes</h1>
+        <nav class="nav">
+            <span><a href="home.html">Home</a></span>
+            <span><a href="HTML.html">HTML</a></span>
+            <span><a href="ux.html">UX Design</a></span>
+            <span><a href="js.html">JavaScript</a></span>
+            <span><a href="index.html">Blog</a></span>
+        </nav>
+    </header>
+    <h1>Learn HTML/CSS </h1>
+    <aside class="aside">
+        <h1>CSS Basics</h1>
+        <nav class="listOfTopic">
+            <ul>
+                <li><a href="#css">CSS Introduction</a></li>
+                <li><a href="#inlineStyling">CSS Inline Styling</a></li>
+                <li><a href="#internalStylesheet">CSS Internal Stylesheet</a></li>
+                <li><a href="#externalStylesheet">CSS External Stylesheet</a></li>
+                <li><a href="#terminilogy">CSS Terminology</a></li>
+                <li><a href="#selectors">CSS Selector</a></li>
+                <li><a href="#selectorSpecificity">CSS Selector Specificity</a></li>
+                <li><a href="#styling">Basic CSS Styling</a>
+                    <ul>
+                        <li><a href="#font">Font</a></li>
+                        <li><a href="#txtAlign">Text Alignment</a></li>
+                        <li><a href="#color">Text color and opacity</a></li>
+                    </ul>
+                </li>
+                <li><a href="#layoutAndPositioning">CSS layout and positioning</a>
+                    <ul>
+                        <li><a href="#boxModel">CSS Box Model</a></li>
+                        <li><a href="#htmlFlow">HTML Flow</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </nav>
+    </aside>
+
+    <section id="css">
+        <h2>CSS: Cascading Style Sheet</h2>
+        <ul>
+            <li>Styling and Presentation: CSS is used to control the visual appearance and layout of HTML elements on a
+                web page.
+                <br>
+                It enables designers to change colors, fonts, spacing, positioning, and more to create a
+                visually appealing and consistent design.
+            </li>
+
+            <li>Separation of Concerns: CSS follows the principle of separation of concerns, which means that HTML
+                defines the structure and contentof a webpage, while CSS defines the styling and presentation.
+                <br>
+                This separation makes it easier to maintain and update the design withoutaffecting the content.
+            </li>
+
+            <li>Selectors and Rules: CSS uses selectors to target specific HTML elements and apply styling rules to
+                them.
+                <br>
+                A typical CSS rule consists of a selector and a set of properties with corresponding values that
+                define how the selected elements should look and behave.
+            </li>
+        </ul>
+        <p>Certainly! CSS, which stands for Cascading Style Sheets, is like a set of instructions that tells a website
+            how to look. It's used to make web pages pretty and organized.
+            <br>
+            <br>
+            You can change colors, fonts, spacing, and where things are placed on the page.
+            Just like how you choose clothes to make yourself look nice, CSS helps make websites look good and easy to
+            read.
+        </p>
+        <article id="inlineStyling">
+            <h3>CSS Inline Styling</h3>
+            <p>
+                Web developers use CSS to style the content on a web page.
+                <br>
+                It is used to modify font types, font sizes, colors, images, content position and a lot more.
+                <br>
+                It is possible to write CSS code directly within HTML - this is known as CSS Inline styles.
+                <br><br>
+                Review the following syntax
+                <br>
+            <div class="code">
+                &lt;p style='color: blue; font-size: 16px;'&gt;Let us learn CSS! &lt;&frasl;p&gt;
+            </div>
+            <ul>
+                <li>The paragraph above has a 'style' attribute</li>
+                <br>
+                <li>The style attribute has 2 declarations -color: blue and font-size: 16px </li>
+            </ul>
+            </p>
+        </article>
+        <article id="internalStylesheet">
+            <h3>CSS Internal stylesheet</h3>
+            <p>Inline styles were a quick way of beautifying HTML, but they are rarely used by Web developers.
+                <br><br>
+                Can you think of any reasons?
+            <ul>
+                <li>If you want to style multiple elements (for example &lt;section&gt; or &lt;h2&gt; elements) which
+                    should have the same format - you will need to go and style each section or heading</li>
+
+                <li>Every time a new &lt;section&gt; or &lt;h2&gt; element is added - you will need to remember to add
+                    the same style element to it as well</li>
+            </ul>
+            Instead of the above, we can create the style element inside the &lt;head&gt; element of the HTML using the
+            following syntax
+            <div class="code">
+                &lt;head&gt;<br>
+                &lt;style&gt;<br>
+                h1 {<br>
+                color: blue;<br>
+                font-size: 16px;<br>
+                } <br>
+                &lt;&frasl;style&gt;<br>
+                &lt;&frasl;head&gt;<br>
+            </div>
+            </p>
+        </article>
+        <article id="externalStylesheet">
+            <h3>CSS External stylesheet</h3>
+            <p> Instead of creating an internal stylesheet, web developers will normally separate the CSS code into
+                a separate file - an external stylesheet - and maintain the HTML and CSS as separate files.
+                <br><br>
+                Why is this beneficial?
+                <br>
+                <li>Reusability: With an external stylesheet, you can define styles once and apply them to multiple
+                    HTML pages. This promotes consistency across your website, ensuring that elements such as headers,
+                    paragraphs, and links look the same throughout</li>
+                <br>
+                <li>Efficiency: When using an external stylesheet, the CSS file is cached by the web browser after the
+                    first request. Subsequent page loads do not require downloading the CSS file again, resulting in
+                    faster page rendering</li>
+                <br>
+                <li>Collaboration: When working on a web project with multiple developers or designers, using an
+                    external stylesheet allows for better collaboration. Different team members can work on the CSS
+                    separately, without interfering with each other's HTML files.
+                    <br>
+                    This promotes parallel development and reduces the chances of code conflicts
+                </li>
+                <br>
+                <li>Browser compatibility: You can use CSS vendor prefixes and feature detection techniques within the
+                    external stylesheet to handle browser-specific implementations</li>
+            </p>
+        </article>
+    </section>
+    <hr>
+    <section id="terminilogy">
+
+        <h2>CSS terminology</h2>
+
+        <div class="code">
+            h2 {<br>
+            color: red;<br>
+            font-size: 24px;<br>
+            }
+        </div>
+
+        <p>
+            In the CSS code above -
+        <ul>
+            <li>'h2' is called the selector</li>
+            <li>Following is the declaration block for the selector</li>
+            <div class="code">
+                { <br>
+                }
+            </div>
+            <li>'font-size: 24px;' is the declaration</li>
+            <li>'font-size' is the property of the declaration</li>
+            <li>'24 px' is the value of the property</li>
+        </ul>
+        </p>
+    </section>
+    <hr>
+    <section id="selectors">
+        <h2>CSS Selectors</h2>
+        <p>A selector is used to target the specific HTML element(s) to be styled by the declaration.
+        <ul>
+            <li>
+                <h3>'Type' selector</h3>
+                <p>
+                    Type selector (also known as an element selector) targets elements based on their HTML tag
+                    names.
+                    <br> The following selector will update the text color of all &lt;p&gt;elements to red.
+                </p>
+                <div class="code">
+                    p {<br>
+                    color: red;<br>
+                    }
+                </div>
+            </li>
+            <li>
+                <h3>'Universal' selector</h3>
+                <p>It targets and applies styles to all elements in an HTML document.
+                <div class="code">
+                    {<br>
+                    font-family: Verdana; <br>
+                    }
+                </div>
+                A selector is used to target the specific HTML element to be styled by the declaration.
+                </p>
+            </li>
+            <li>
+                <h3>'Class' selector</h3>
+                <p>In CSS, a class selector is a way to select and style elements based on their class attribute.
+                <ul>
+                    <li>The class selector is denoted by a period (.) followed by the class name.
+                    <li>To use a class selector, you need to assign the specified class name to the desired HTML
+                        elements using the class attribute.</li>
+                    <li>Multiple elements can share the same class, allowing you to apply consistent styles to
+                        them.</li>
+                </ul>
+                <div class="code">
+                    /* In the css file */ <br>
+                    .my-class { <br>
+                    /* CSS styles for elements with the class "my-class" go here */ <br>
+                    } <br>
+                    <br>
+                    &lt;!-- In the html file --&gt;<br>
+                    &lt;p class="my-class"&gt;This paragraph has the class "my-class". &lt;&frasl;p&gt;<br>
+                    &lt;p&gt;This paragraph does not have the class "my-class". &lt;&frasl;p&gt;<br>
+                    &lt;div class="my-class"&gt;This div also has the class "my-class". &lt;&frasl;div&gt;<br>
+                </div>
+                </p>
+            </li>
+            </p>
+    </section>
+    <hr>
+    <section id="selectorSpecificity">
+        <h2>CSS Selector specificity</h2>
+        <p>
+            Specificity in CSS determines which styles are applied to an element when multiple conflicting
+            styles are defined. Here's a breakdown of the factors that determine specificity, from highest to
+            lowest:
+        <ul>
+            <li>Inline styles: Styles applied directly to an HTML element using the style attribute have the
+                highest specificity. Inline styles override any other styles defined elsewhere.</li>
+            <br>
+            <li>ID selectors: Selectors targeting elements by their ID (e.g., #my-id) have the second highest
+                specificity. Since IDs must be unique within an HTML document, the style defined by an ID selector
+                will be highly specific to that element.</li>
+            <br>
+            <li>Class selectors, attribute selectors, and pseudo-classes: Selectors targeting elements by their
+                class (e.g., .my-class), attribute (e.g., [type="text"]), or pseudo-class (e.g., :hover) have medium
+                specificity.</li>
+            <br>
+            <li>Type / Element selectors: Selectors targeting elements by their tag name (e.g., p, div) have the
+                lowest specificity.</li>
+        </ul>
+        </p>
+    </section>
+    <hr>
+    <section id="styling">
+        <h2>Basic CSS Styling</h2>
+        <article id="font">
+            <h3>Basic CSS styling - Font</h3>
+            <ul>
+                <li>Font familyRemember that there are browser specific fonts. You should take this into account
+                    while
+                    deciding on the font-family</li>
+
+                <div class="code">
+                    h1 { <br>
+                    font-family: 'Arial';<br>
+                    }
+                </div>
+                <li>Font sizeSample syntax - here px refers to pixels</li>
+                <div class="code">
+                    p { <br>
+                    font-size: 18px; <br>
+                    }
+                </div>
+                <li>Font weightUsed to decide how the text will be displayed - bold v/s thin
+                    <ul>
+                        <li>can accept numeric values from 100 to 900, with increments of 100</li>
+                        <li>'normal' - Regular font weight of 400</li>
+                        <li>'bold' - font weight of 700</li>
+                    </ul>
+                </li>
+                <div class="code">
+                    p { <br>
+                    font-weight: bold; <br>
+                    }
+                </div>
+            </ul>
+        </article>
+        <article id="txtAlign">
+            <h3>Basic CSS styling - Text alignment</h3>
+            <p>The text-align property in CSS is used to control the horizontal alignment of text <b>within</b> its
+                containing element.
+                <br><br>
+                It allows you to specify how the text is positioned <b>relative</b> to the element's content box.
+                <br>
+                The text-align property can be set to one of the following commonly used values:
+            <ul>
+                <li>left / center / right — aligns text to the respective side of its parent element</li>
+                <li>justify — Adjusts the spacing between words in a line to create equal lengths of each line, except
+                    for the last line.This often results in the text being aligned to both the left and right edges of
+                    the container</li>
+                <li>Note that the text-align property does not affect the vertical alignment of the text.</li>
+            </ul>
+
+            Syntax format :
+
+            <div class="code">
+                p { <br>
+                text-align: center;<br>
+                }
+            </div>
+            </p>
+        </article>
+        <article id="color">
+            <h3>Basic CSS styling - Text color and opacity</h3>
+            <p>
+                'Foreground' color is the color that of the element itself. The 'background' color is the color applied
+                to the area behind the text or content of an element.
+            </p>
+            <ul>
+                <li>In web development and CSS, you can set the foreground color and background color using the
+                    color
+                    and background-color properties, respectively.
+                    <div class="code">
+                        p { <br>
+                        color: blue; <br>
+                        background-color: green; <br>
+                        }
+                    </div>
+                </li>
+            </ul>
+            <p>The 'opacity' property in CSS can be used to adjust the transparency of an element. It affects the
+                entire element and any content within it.
+            </p>
+            <ul>
+                <li>It's measured from 0 to 1, with 1 representing fully visible and and 0 representing fully
+                    invisible.</li>
+                <br>
+                <li>It is used for both text and images</li>
+            </ul>
+            <div class="code">
+                p { <br>
+                opacity: 0.5; <br>
+                }
+            </div>
+        </article>
+    </section>
+    <hr>
+    <section id="layoutAndPositioning">
+        <h2>CSS layout and positioning</h2>
+        <article class="boxModel">
+            <h3>CSS layout and positioning - Box model</h3>
+            <p>
+                The box model in CSS is a fundamental concept that describes how elements are rendered and how their
+                dimensions and spacing are calculated.
+                <br><br>
+                It is essential for understanding how elements are displayed on a web page.
+                <br><br>
+                The box model consists of four main components:
+            <ul>
+                <li>Content: This is the actual content of the element, such as text, images, or other HTML elements.
+                </li>
+                <li>Padding: The padding is the space between the content and the border. It provides a buffer area
+                    around the content, inside the element. Padding can be set using CSS properties
+                    like 'padding-top' ,'padding-right' ,'padding-bottom' , and'padding-left'</li>`
+                <li>Border: The border surrounds the padding and content and defines the visible boundary of the
+                    element. It can be styled using properties like 'border-width', 'border-style',
+                    and 'border-color'</li>
+                <li>Margin: The margin is the space between the border of an element and the surrounding elements.
+                    It creates a gap or separation between elements.</li>
+                <li>Margins can be set using properties like 'margin-top', 'margin-right', 'margin-bottom',
+                    and 'margin-left'.</li>
+            </ul>
+            </p>
+        </article>
+        <article class="boxModelDiagram">
+            <h3>CSS layout and positioning - Box model</h3>
+            To put it simply - this is how the box for each element appears.
+            <img src="image/boxModel.png" alt="CSS Box Model">
+            <p>
+                Controlling the width / height of the content, the padding around the content, the thickness / color
+                of the border and the margin between the outside of the border and the next element, we define how
+                the element will appear on our webpage.
+            </p>
+        </article>
+        <articale id="htmlFlow">
+            <h3>CSS layout and positioning - HTML flow</h3>
+            <p>
+                The flow of HTML refers to the default behavior of how HTML elements are rendered and positioned in
+                a document without any specific CSS styling or positioning.
+            <ul>
+                <li>The key difference between the box model and the flow of HTML is that the box model focuses on
+                    the <b>individual elements' dimensions, spacing, and layout properties,</b> while the flow of
+                    HTML refers to the overall arrangement of elements on a web page.</li>
+                <li>CSS can be used to modify the HTML flow by applying the following properties
+                    <ul>
+                        <li>position</li>
+                        <li>display</li>
+                        <li>z-index</li>
+                        <li>float</li>
+                        <li>clear</li>
+                    </ul>
+                </li>
+            </ul>
+            </p>
+        </articale>
+        </p>
+        </article>
+    </section>
+    <footer>
+        <button id="back">
+            <a href="#">Back To Top</a>
+        </button>
+
+    </footer>
+</body>
+
+</html>

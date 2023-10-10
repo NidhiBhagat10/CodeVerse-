@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML-Hypertext Markup Language</title>
+	<link rel="stylesheet" href="/CodeVerse/css/style.css">
+	<link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+	<header id="head">
+		<h1>CodeChef Revision Notes</h1>
+		<nav class="nav">
+			<span><a href="home.html">Home</a></span>
+			<span><a href="css.html">CSS</a></span>
+			<span><a href="ux.html">UX(User Experience)</a></span>
+			<span><a href="js.html">Java Script</a></span>
+			<span><a href="index.html">Daily Blog</a></span>
+		</nav>
+	</header>
+	<h1> Learn HTNL and CSS</h1>
+	<aside class="topic">
+		<h1>HTML Basics</h1>
+		<div>
+			<ul class="listOfTopic">
+				<li><a href="#html">HTML Introduction</a></li>
+				<li><a href="#element">HTML Element</a></li>
+				<li><a href="#body">HTML Body</a></li>
+				<li><a href="#para">HTML Paragraph</a></li>
+				<li><a href="#txt">HTML Text Formating</a></li>
+				<li><a href="#list">HTML List</a></li>
+				<li><a href="#img">HTML Image</a></li>
+				<li><a href="#link">HTML Link</a></li>
+				<li><a href="#table">HTML Table</a></li>
+				<ul>
+					<li><a href="#tHead">Table Head and Footer</a></li>
+				</ul>
+				<li><a href="#moduleRecap">Notes Recap</a></li>
+				<li><a href="#structure">HTML Structure & Hierarchy</a></li>
+				<li><a href="#div">HTML Div</a></li>
+				<li><a href="#semantic">HTML Semantic and Non-<br>
+						Semantic tag</a> </li>
+			</ul>
+		</div>
+	</aside>
+
+	<section id="html">
+		<h2>HTML(Hypertext Markup Language)</h2>
+		<ul>
+			<li>Structure of Web Content: HTML is the standard markup language used to create the structure of
+				web content. It consists of a set of
+				elements and tags that define the different parts of a web page, such as headings, paragraphs,
+				images, links, forms, and more.</li>
+			<br>
+			<li>Hierarchical Structure: HTML documents are organized hierarchically using nested elements.
+				Elements are often structured as opening tags,
+				content, and closing tags (e.g., &lt;tag&gt;content&lt;&frasl;tag&gt;). The hierarchy defines
+				the relationships between different parts of the content.</li>
+			<br>
+			<li>Semantic Markup: HTML supports semantic markup, which means that elements are chosen based on
+				their meaning and purpose. This helps search
+				engines, accessibility tools, and other software understand the content better, enhancing user
+				experience and SEO.</li>
+		</ul>
+	</section>
+	<hr>
+	<section id="element">
+		<h2>HTML consists of elements</h2>
+		<p>
+		<blockquote>&lt;h1&gt;My name is Anthony Gonsalves &lt;&frasl;h1&gt;
+		</blockquote>
+		In the code above,
+		<ul>
+			<li>Anything contained in the boxes '&lt;&gt;' is known as a <b>Tag</b></li>
+			<li>&lt;h1&gt; is known as an <b>Opening tag</b></li>
+			<li>'My name is Anthony Gonsalves' is the <b>Content</b></li>
+			<li>&lt;&frasl;h1&gt is known as the <b>Closing Tag</b></li>
+			<li>'&lt;h1&gt; My name is Anthony Gonsalves &lt;&frasl;h1&gt'- the entire
+				unit togetger is called an <b>HTML Element </b></li>
+		</ul>
+		</p>
+	</section>
+	<hr>
+	<section id="body">
+		<h2>Our HTML Skeleton actually has a Body</h2>
+		<p>The body consist of the following - the &lt;header&gt;, &lt;main&gt; and &lt;footer&gt;
+			respectively.<br>
+			Let us look at the simplified travel blog example that we looked at earlier.<br>
+			Once the &lt;body&gt; of an HTML file has been defined, we can add multiple components to our
+			website
+		<ul>
+			<li>Text in the form of headings, paragraph, sections</li>
+			<li>Images and Videos</li>
+			<li>Buttons and forms</li>
+		</ul>
+		</p>
+	</section>
+	<hr>
+	<section id="para">
+		<h2>To display text in HTMl - we usually use the 'Paragraphs' with the tags &lt;p&gt; &lt;&frasl;p&gt;
+		</h2>
+		<ul>
+			<li>Multiple sentence can be typed between the opening and closing paragraph tags
+				<div class="code">
+					&lt;p&gt; This is first sentence. Meny other sentences can be written here.&lt;&frasl;p&gt;
+				</div>
+			</li>
+			<li>To separate Paragraphe - we need separate dedicated opening and closing &lt;p&gt; tags for each
+				para
+				<div class="code">&lt;p&gt; Para 1 with its own content.&lt; &frasl;p &gt;<br>
+					&lt p &gt Para 1 with its own content.&lt; &frasl;p &gt;
+				</div>
+			</li>
+			<li>To separate para and add a space between then- we use something called a 'break' tag &lt;br&gt;.
+				Interestingly,
+				&lt;br&gt; does <b>NOT</b> need a closing tag </li>
+			<div class="code">&lt;p&gt; Para 1 with some content &lt;&frasl;p&gt;<br>
+				&lt;b&gt;<br>
+				&lt;p&gt; Para 2 with some content &lt;&frasl;p&gt;<br>
+			</div>
+			<li>'break' tag can also be used to add a new line within a para.
+				<div class="code">&lt;p&gt; This is the 1st sentence.
+					<br>&lt;br&gt;<br>
+					This is the 2nd sentence.
+					<br>&lt;br&gt; <br>
+					This is the 3rd sentence.
+					<br>&lt;br&gt;<br>
+					I am sure you got the point by now &lt;&frasl;p&gt;
+				</div>
+			</li>
+		</ul>
+	</section>
+	<hr>
+	<section id="txt">
+		<h2>Text formating in HTML</h2>
+		<ul>
+			<li>&lt;b&gt;This is bold text.&lt;&frasl;b&gt;</li>
+			<li>&lt;strong&gt;This is also bold text.&lt;&frasl;strong&gt;</li>
+			<li>&lt;i&gt;This is italicized text.&lt;&frasl;i&gt</li>
+			<li>&lt;em&gt;This is also italicized text.&lt;&frasl;em&gt;</li>
+			<li>&lt;u&gt;This is underlined text.&lt;&frasl;u&gt;</li>
+			<li>&lt;s&gt;This is strikethrough text.&lt;&frasl;s&gt;</li>
+			<p>There are thousends of such options.
+		</ul>
+	</section>
+	<hr>
+	<section id="list">
+		<h2>HTML also allows us to generate Lists</h2>
+
+		<ul>
+			<li>Unordered list are created using the &lt; ul &gt; tag. An unordered list has individual items
+				with a bullet point.
+				<div class="code">
+					&lt; ul &gt; <br>
+					&lt; li &gt; Athens &lt; &frasl; li &gt;
+					<br>
+					&lt; li &gt; Volcanic island &lt; &frasl; li &gt;
+					<br>
+					&lt; &frasl; ul &gt;
+				</div>
+
+				<div>Will apppear as
+					<ul>
+						<li>Athens</li>
+						<li>Volcanic islands</li>
+					</ul>
+				</div>
+			</li>
+
+			<li>Ordered lists are created using the &lt;ol&gt; tags. Insted of the bullet points- here the
+				content is ordered with numbers
+				<div class="code">&lt; ol &gt;<br>
+					&lt; li &gt; Athens &lt; &frasl; li &gt;
+					<br>
+					&lt; li &gt; Volcanic islands &lt; &frasl; li &gt;
+					<br>
+					&lt; &frasl;ol&gt;
+				</div>
+				<div>Will appear as
+					<ol>
+						<li>Athens</li>
+						<li>Volcanic islands</li>
+					</ol>
+				</div>
+			</li>
+
+			<li>
+				The &lt; li &gt; tag is an Html element used to create a list item in an ordered (&lt;ol&gt;) or
+				unordered(&lt; ul &gt;) list.
+				"li" stands for "list item".
+			</li>
+		</ul>
+	</section>
+	<hr>
+	<section id="img">
+		<h2>The &lt;img&gt; tag allows you to add image to your webpage.</h2>
+
+		<ul>
+			<li>&lt;img&gt; is a self closing tag.</li>
+			<li>The &lt;img&gt; has an attribute <b>src</b>. src must be set as a URL where the image is stored.
+			</li>
+			<li> Sample syntax for using the &lt;img&gt; tag is as follows.
+				<div class="code">
+					&lt;src="https://cnd.codechef.com/learning/webdev"&gt;
+				</div>
+			</li>
+			<li>Usually an alt attribute is also added to an image tag
+				<ul>
+					<li>If an image fails to load - it shows the discription of the image.</li>
+					<li>Screen reading software and search engine also read the description of the image as they
+						cannot
+						'see' the image
+					</li>
+					<li>Sample syntax of using the alt attribute </li>
+					<div class="code">
+						&lt;img src="https://codechef.com/Learning" alt = 'Greece map'&gt;
+					</div>
+				</ul>
+			</li>
+		</ul>
+	</section>
+	<hr>
+	<section id="link">
+		<h2>The &lt; a &gt; tag allows links to a webpage</h2>
+
+		<p>The sample syntax used for this is </p>
+		<div class="code">
+			&lt; a href= "https://en.wikipedia.org/wiki/Greece" &gt; Greece wiki &lt;&frasl;a &gt;
+		</div>
+		<ul>
+			<li>Greece wiki is known as the 'Anchor' and is the text which needs to be clicked to open the URL</li>
+			<br>
+			<li>href attribute contains the actual URL - https://en.wikipedia.org/wiki/Greece in this case</li>
+		</ul>
+		<p>
+			You will notice that this opens the new webpage in the same tab. What if the user goes to the new
+			webpage and forgets about you?
+			<br><br>
+			Sometimes - you want the user to stay on your webpage and not migrate away.
+			<br>
+			The sample syntax used for this is
+			<br>
+		<div class="code">
+			&lt;a href="https://en.wikipedia.org/wiki/Greece" target="_blank"&gt;Greece wiki &lt;&frasl;a&gt;
+		</div>
+		<ul>
+			<li>When the 'target' is set as "_blank", HTML tells your browser to open a new tab for the new link
+			</li>
+			<br>
+			<li>When the 'target' is set as "_self", HTML tells your browser to open in the same window</li>
+		</ul>
+
+		</p>
+	</section>
+	<hr>
+	<section id="table">
+		<h2>Let's learn about the &lt;table&gt; element in HTML</h2>
+		<ul>
+			<li>The table is created using the tags &lt;table&gt; and &lt;&frasl;table&gt;</li>
+			<li>Rows are added to the table using the tags &lt;tr&gt; and &lt;&frasl;tr&gt;</li>
+			<li>Data is added to the rows in the table using the table data tag &lt;td&gt;and &lt;&frasl;td&gt;</li>
+			<li>Sample syntax is as follows
+				<div class="code">
+					&lt;table&gt;<br>
+					&lt;tr&gt;<br>
+					&lt;td&gt; Entry in Row 1 &lt;&frasl;td&gt;<br>
+					&lt;&frasl;tr&gt;<br>
+					&lt;tr&gt;<br>
+					&lt;td&gt; Entry in Row 2 &lt;&frasl;td&gt;<br>
+					&lt;&frasl;tr&gt;<br>
+					&lt;&frasl;table&gt;
+				</div>
+			</li>
+		</ul>
+		<p>To add multiple entries in a single row, we use the following syntax.
+			<br><br>
+			This generates 2 rows and 2 columns
+		</p>
+		<div class="code">
+			&lt;table&gt;<br>
+			&lt;tr&gt;<br>
+			&lt;td&gt; Row 1, Column 1 &lt;&frasl;td&gt;<br>
+			&lt;td&gt; Row 1, Column 2 &lt;&frasl;td&gt;<br>
+			&lt;&frasl;tr&gt;<br>
+			&lt;tr&gt;<br>
+			&lt;td&gt; Row 2, Column 1 &lt;&frasl;td&gt;<br>
+			&lt;td&gt; Row 2, Column 2 &lt;&frasl;td&gt;<br>
+			&lt;&frasl;tr&gt;<br>
+			&lt;&frasl;table&gt;<br>
+		</div>
+		<p>
+			To add titles to rows and columns, we can use heading elements.
+			<br><br>
+			Like data, table headings must be placed inside a table row - check sample syntax below.
+
+		</p>
+		<div class="code">
+			&lt;table&gt;<br>
+			&lt;!-- The following table has 1 row and 3 columns --&gt;<br>
+			&lt;!-- The 1st column is blank, the 2nd and 3rd column have text entries --&gt;<br>
+			&lt;tr&gt;<br>
+			&lt;th&gt; &lt;&frasl;th&gt; <br>
+			&lt;th scope="col"&gt;Column 2&lt;&frasl;th&gt;<br>
+			&lt;th scope="col"&gt;Column 3&lt;&frasl;th&gt;<br>
+			&lt;&frasl;tr&gt;<br>
+			&lt;&frasl;table&gt;<br>
+		</div>
+		<p>
+			The scope="col" syntax above signifies that this heading is for a column.
+			<br><br>
+			In the code in the index.html, replace the &lt;table&gt;tag in line 3 with the following syntax.
+
+		<div class="code">
+			&lt;table border="1" cellpadding="8" cellspacing="0"&gt;
+		</div>
+		<br>
+		Our table is almost complete.
+		</p>
+
+		<article class="tHead">
+			<h3>Head and footer of a table.</h3>
+			<p>
+				Just like the overall html code has a head, body and a footer, a &lt;table&gt;too can have the same.
+			<ul>
+				<li>The &lt;thead&gt; elements contains the headings</li>
+				<br>
+				<li>The &lt;tbody&gt; element contains all the table's data</li>
+				<br>
+				<li>The &lt;tfoot&gt;element contains the last row of the table and relevant details</li>
+			</ul>
+
+			Sample syntax :
+			<div class="code">
+				&lt;table&gt;<br>
+				&lt;thead&gt;<br>
+				&lt;tr&gt;<br>
+				&lt;th&gt;This is the head with only 1 column&lt;&frasl;th&gt;<br>
+				&lt;&frasl;tr&gt;<br>
+				&lt;&frasl;thead&gt;<br>
+				&lt;tbody&gt;<br>
+				&lt;tr&Gt;<br>
+				&lt;td&gt;This is the body with 2 rows&lt;&frasl;td&gt;<br>
+				&lt;&frasl;tr&gt;<br>
+				&lt;tr&gt;<br>
+				&lt;td&gt;This is the body with 2 rows&lt;&frasl;td&gt;<br>
+				&lt;&frasl;tr&gt;<br>
+				&lt;&frasl;tbody&gt;<br>
+				&lt;tfoot&gt;<br>
+				&lt;tr&gt;<br>
+				&lt;td&gt;This is the footer&lt;&frasl;td&gt;<br>
+				&lt;&frasl;tr&gt;<br>
+				&lt;&frasl;tfoot&gt;<br>
+				&lt;&frasl;table&gt;<br>
+			</div>
+			</p>
+		</article>
+	</section>
+	<hr>
+	<section id="moduleRecap">
+		<h2>List and Table Module Recap</h2>
+		<p>
+		<h3>The concepts you learnt in the current module were</h3>
+		<ul>
+			<li>You can add lists to your webpage
+				<ul>
+					<li>&lt;ol&gt; &lt;&frasl;ol&gt; creates numbered / ordered lists.</li>
+					<li>&lt;ul&gt; &lt;&frasl;ul&gt; creates unordered lists.</li>
+					<li>&lt;li&gt; &lt;&frasl;li&gt; is required to add entries to the list.</li>
+				</ul>
+			</li>
+			<li>You can add images and links to your webpage
+				<ul>
+					<li>&lt;img src="image url" alt='text'&gt; adds an image stored at the URL with 'text' displayed
+						in case the image does not load.</li>
+					<li>&lt;a href='page url' target='_blank'&gt;Text&lt;&frasl;a&gt; - when you click on 'Text', it
+						opens 'page url' in a new tab.</li>
+				</ul>
+			</li>
+			<li>You can add tables to your webpage
+				<ul>
+					<li>&lt;table&gt; &lt;&frasl;table&gt; - creates a table.</li>
+					<li>&lt;tr&gt; &lt;&frasl;tr&gt;- adds a row to a table.</li>
+					<li>&lt;td&gt; &lt;&frasl;td&gt;- adds entries to the row. The number of &lt;td&gt; tags define
+						the
+						number of columns.</li>
+					<li>&lt;th&gt; &lt;&frasl;th&gt;- is used to signify column or row headings. Gives more
+						importance as compared to the &lt;td&gt; tag.</li>
+					<li>A table can also have a head, body and footer.</li>
+				</ul>
+			</li>
+		</ul>
+		</p>
+	</section>
+	<hr>
+	<section id="structure">
+		<h2>HTML Structure & Hierarchy</h2>
+		<p>
+			HTML is usually structured as a set of family tree relationships.
+		<div class="code">
+			&lt;body&gt;<br>
+			&lt;header&gt;<br>
+			&lt;h1&gt;My recent trip to Greece&lt;&frasl;h1&gt;<br>
+			&lt;&frasl;header&gt;<br>
+			<br>
+			&lt;main&gt;<br>
+			&lt;h2&gt;Overview&lt;&frasl;h2&gt;<br>
+			&lt;h3&gt;<br>
+			&lt;ol&gt;<br>
+			&lt;li&gt;Greece&lt;&frasl;li&gt;<br>
+			&lt;li&gt;Trip Itinerary&lt;&frasl;li&gt;<br>
+			&lt;&frasl;ol&gt;<br>
+			&lt;&frasl;h3&gt;<br>
+		</div>
+		<br>
+		In the sample above,
+		<ul>
+			<li>&lt;h2&gt;Overview&lt;&frasl;h2&gt; is the child of&lt;main&gt;</li>
+			<li>&lt;li&gt;Greece&lt;&frasl;li&gt; and &lt;li&gt; Trip Itinerary&lt;&frasl;li&gt; are at the same
+				level - they are siblings</li>
+			<li>Both &lt;header&gt; and &lt;main&gt; are the children of &lt;body&gt;</li>
+		</ul>
+		HTML hierarchy and its importance will be relevant when we learn
+		CSS.
+		<br>
+		<br>
+		Child elements inherit behaviour and styling from their parent
+		element.
+		</p>
+	</section>
+	<hr>
+	<section id="div">
+		<h2>&lt;div&gt; is a powerful element in HTML</h2>
+		<p>
+			It is the 'The one ring to rule them all'.
+		<ul>
+			<li>&lt;div&gt;is a container that divides the page into sections</li>
+			<li>&lt;div&gt;helps to apply CSS styles to a block of content.</li>
+			<li>&lt;div&gt;element can hold various types of content,including text, images, videos, tables.</li>
+		</ul>
+
+		&lt;div&gt;elements were primary used to create groups or sections which have a common logical and visual
+		behaviour on our webpage.
+		<br>
+		<br>
+		In Semantic HTML - instead of using&lt;div&gt; - we use tags such as &lt;header&gt;, &lt;nav&gt;,
+		&lt;section&gt; ,&lt;article&gt;, &lt;aside&gt;.
+		<ul>
+			<li>Once written in semantic html, the code is easier to read for other developers</li>
+			<li>The code is also easier to read for screen readers and for SEO since they are able to under stand
+				what each section of the code is supposed to represent</li>
+			<li>But what exactly is the difference you ask?Visually - this is how different blocks of code would get
+				called out using semantic html
+				<img src="image/divtag.png" alt="Div Tag">
+			</li>
+
+		</ul>
+		Whenever we use HTML to set up our webpage, we will use both non-semantic HTML (div) and Semantic HTML.
+		</p>
+	</section>
+	<hr>
+	<section id="semantic">
+		<h2>Semantic HTML</h2>
+		<article class="headerFooter">
+			<h3>Semantic HTML - Header and footer</h3>
+			<p>
+				The &lt;header&gt;semantic element is used for the main title or introductory element - usually the
+				&lt;h1&gt; or &lt;h2&gt; tag at the top of the page.
+				<br>
+				<br>
+				The &lt;footer&gt; element is used for the bottom of the webpage usually containing information such
+				as
+				'Contact us', Terms and conditions', 'About us', etc.
+				<br>
+				<br>
+				Sample syntax:
+			<div class="code">
+				&lt;header&gt;<br>
+				&lt;h1&gt;<br>
+				Everything you need to know about pizza! <br>
+				&lt;&frasl;h1&gt;<br>
+				&lt;&frasl;header&gt;<br>
+				&lt;footer&gt;<br>
+				&lt;p&gt; All rights reserved.Copyright@hrishik85 &lt;&frasl;p&gt;<br>
+				&lt;&frasl;footer&gt;<br>
+			</div>
+			</p>
+		</article>
+		<article class="mainSectionArticle">
+			<h3>Semantic HTML - Main, Section & Article</h3>
+			<p>
+				Usually- the &lt;header&gt; and &lt;footer&gt; elements fall outside the &lt;main&gt; element.
+				<br>
+				<br>
+				&lt;main&gt; will contain the primary content of the webpage.
+			<ul>
+				<li>&lt;main&gt; will contain semantic elements such as &lt;section&gt; ,&lt;article&gt; and
+					non-semantic elements such as&lt;div&gt;</li>
+				<li>&lt;section&gt; is usually used for a heading and paragraphs associated with the heading or a
+					chapter</li>
+				<li>&lt;article&gt; usually used for a self-contained composition such as comments or excerpts</li>
+			</ul>
+			The syntax format is as follows
+			<div class="code">
+				&lt;main&gt;<br>
+				&lt;section&gt;<br>
+				This is a section <br>
+				&lt;&frasl;section&gt;<br>
+				&lt;article&gt;<br>
+				This is a separate article <br>
+				&lt;article&gt;<br>
+				&lt;&frasl;main&gt;<br>
+			</div>
+			</p>
+		</article>
+	</section>
+	<hr>
+	<footer>
+		<a href="#">Back To Top</a>
+	</footer>
+</body>
+
+</html>

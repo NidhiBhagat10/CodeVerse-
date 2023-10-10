@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git and Github</title>
+    <link rel="stylesheet" href="/CodeVerse/css/style.css">
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        <div class="version-control">
+
+            <h1 class="main-heading">Git and GitHub</h1>
+
+            <p>Git is a very popular version control system , it is a tool that helps to track changes in code or
+                history of our project. <br><br>
+
+                Used to -
+            <ul class="list">
+                <li>track the history </li>
+                <li>To colaborate.</li>
+            </ul>
+            </p>
+            <p>GitHub is a Website that allows developer to sgtore and manage their code using git. Project folders are
+                called Repository.
+
+            </p>
+
+
+            <div class="git">
+                <h2 class="sub-heading"> Git </h2>
+                <p>
+                    <b>git --version</b> - Shows git downloged version if installed properly. From here we can confirm
+                    that if git is installed in our system or not. <br>
+
+                    <b>ls</b> - list all the files and directoried. <br>
+
+                    <b>ls -a</b> - shows all files with hidden files. <br>
+                <div class="notes">If it shows .git it means this file is tracked by git.</div>
+
+                <b>clear</b> - clear command window. <br>
+
+                <b>pwd</b> - find our current working directory. <br>
+
+                <div class="git-config">
+                    <h2 class="sub-heading">Configuring Git</h2>
+
+                    <p>Telling your git in which account you are going to change (change from git to gitHub). <br>
+                    <div class="example">
+                        git config --global user.name "Your Name" <br>
+                        <div class="notes">global level - pure system pe change(by one account) , Local level - in
+                            specific project or repo with different account.</div>
+                        git config --global user.email "someone@email.com" <br>
+                        git config --list <br>
+
+                        <div class="notes"><b>~</b> - shows we are in systems root directory/main directory</div>
+                    </div>
+                    </p>
+                </div>
+                <div class="clone-status">
+                    <h2 class="sub-heading">Clone & Status</h2>
+                    <p>
+                        <b>Clone</b> - cloning a repository on our local machine
+                    <div class="example">
+                        git clone <- some link ->
+                    </div>
+                    <div class="notes">remote - github, local - laptop/PC</div>
+
+                    <b>Status</b> - Display the status of the code
+                    <div class="example">
+                        git status
+                    </div>
+                    <b>status type</b> - <br>
+                    <div class="example">
+                        <b>Untracked</b> - new files that git dosen't yet track <br>
+                        <b>modified</b> - changed <br>
+                        <b>staged</b> - file is ready to be committed <br>
+                        <b>unmodified</b> - unchanged <br>
+                    </div>
+                    </p>
+                    <b>cd <-foldername-></b> - change directory, to go from outer folder to inner folder. <br>
+                    <b>cd ..</b> - back to outer folder or directory. <br>
+                    <b>mkdir</b> - make directory, used to make new directory.  
+                </div>
+                <div class="add-commit">
+                    <h2 class="sub-heading">Add & Commit</h2>
+                    <p>
+                        <b>add</b> - adds new or changed files in your working directory to the Git staging area. <br>
+                        <div class="example">
+                            git add <-file name->
+                        </div>
+
+                        <b>Commit</b> - it is the record of change
+                        <div class="example">
+                            git commit -m"some message"
+                        </div>
+                    </p>
+                </div>
+                <div class="push">
+                    <h2 class="sub-heading">Push Command</h2>
+                    <p>
+                        <b>push</b> - upload local repo content to remote repo
+                        <div class="example">
+                            git push origin main
+                        </div>
+                    </p>
+                </div> 
+                <div class="init">
+                    <h2 class="sub-heading">init Command</h2>
+                    <p>
+                        <b>init</b> - used to creat a new git repo. to initialize git in an Existing project in local machine.
+                        <div class="example">
+                            git init <br>
+                            git remote add origin <-link-> <br>
+                            git remote -v (to verify remote) <br>
+                            git branch (to check branch) <br>
+                            git branch -M main (to rename branch) <br>
+                            git push origin main
+                        </div>
+                    </p>
+                </div>
+                </p>
+            </div>
+
+            <div class="git-hub">
+                <h2 class="sub-heading">GitHub</h2>
+
+                <p>
+                    <b>README.md</b> - This file is used to describe our project, like what is in our project, how to
+                    use it etc.
+                <div class="notes">.md - markdown</div>
+
+                <b>Commit</b> - making changes final. When we change something we add it and then commit it. <br>
+
+                <b>Commit message</b> - write what change you made.
+
+
+                </p>
+
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

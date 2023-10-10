@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+    <link rel="stylesheet" href="/CodeVerse/css/style.css">
+</head>
+
+<body>
+    <header class="js-header-section">
+        <div class="nav-container">
+            <div class="cv-logo">
+                <a href="index.html" class="cv-link">
+                    <img src="/CodeVerse/image/cvlogo.png" alt="CodeVerse Logo">
+                </a>
+            </div>
+            <div class="nav-bar">
+                <ul class="nav-menu">
+                    <li class="nav-list">
+                        <a href="home.html">Home</a>
+                    </li>
+
+                    <li class="nav-list">
+                        <a href="index.html">Blog</a>
+                    </li>
+
+                    <li class="nav-list">
+                        <select name="recap-notes" id="notes">
+                            <option value="">HTML</option>
+                            <option value="">CSS</option>
+                            <option value="">UX/UI</option>
+                        </select>
+                    </li>
+
+                    <li class="nav-list">
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="js-banner">
+            <div class="js-head">
+                <h1>javaScript</h1>
+            </div>
+
+            <p>Let's add some Functionalities in our web-site.</p>
+        </div>
+    </header>
+
+    <main class="js-main">
+        <div class="jsNotes">
+            <h2>Quick Recap Notes</h2>
+
+            <div class="keyword">
+                <b>Keywords</b> - Reserved words that have some meaning in programming.
+            </div>
+
+            <div class="variable-const">
+                <b>Var</b> - Variables are used to store values/data.It's value can be changed.
+                <ul class="list">
+
+                    <li>in ES5 version</li>
+                    <li>Scope: function</li>
+                    <li>var adds it self to the window object. It's not good because it exposes your data.</li>
+                </ul>
+
+                <b>Const</b> - Constant are also used to store value but it's value can no be changed.<br>
+
+                <b>let</b> - It is also variable type and used to store data.
+                <ul class="list">
+                    <li>in ES6 version</li>
+                    <li>Scope: braces</li>
+                    <li>let and const does not add itself to window object.</li>
+                </ul>
+
+                <div class="notes">Mainly Java-Script have 2 versions ES5 and ES6. ES5 only have var variable type . ES6
+                    have both let and const type.</div>
+            </div>
+
+            <div class="browser-api">
+                <b>Browser context API</b> - This provides window, stack, heap memory. <br>
+
+                <b>Window</b> - In JS we use so many features some of them are not JS features But we are able to use
+                it in JS because those features JS bring from window, And Window is a box of features given by browser
+                to use by JS. <br>
+
+                <b>Stack</b> - Stack is a data-structure, use to store data in a structured manner. Here in Stack, data
+                that enters last comes out first. <br>
+
+                <b>Heap Memory</b> - heap memory is used to store variable and data of our program.
+            </div>
+
+            <div class="execution-context  ">
+                <b>Execution context</b> - It is an imaginary container, whenever we exicute a function it will make an
+                imaginary container where it will store it's three things
+
+                <ul class="list">
+                    <li>variables</li>
+                    <li>functions inside that parent function</li>
+                    <li>lexical environmentof that function</li>
+                </ul>
+
+                <b>Lexical environment</b> -It is like a chart of things that function can access, it holds scope and
+                scope chain. It tells what we can
+                access and what we cannot in that function.<br>
+            </div>
+
+            <div class="hoisting">
+                <b>Hoisting</b> - In javaScript variable can be used above its declaration line.
+                <Span class="notes">Do not get confuse with hosting both are different things.</Span>
+
+                <b>Undefined and not- defined</b> - undefined means there is a variable with that name in our program
+                but its value is not defined or that print value statement is hoisting. not-defined means there is no
+                variable present in the program with that name.<br>
+            </div>
+
+            <div class="types">
+                <b>primitives</b> - when we copy first variable (primitive type) value in other variable and change
+                value of the 2nd variable original value in first variable remains same.(without bracket). <br>
+
+                <b>reference</b> - when we copy our first variables value in 2nd variable and change value of 2nd
+                variable value of first variable also changes (values inclosed with bracket).
+                <span class="example">primitive type is like giving a zerox copy of our data if any alteration takes
+                    place in any of the copy it will not affect the other one and reference is like sharing same copy of
+                    data so if anything change that applies on both variable.</span>
+
+                <b>how to copy refrence values</b> - we can do it using spread operator(...)
+                <div class="example">
+                    var a={1,2,3,4,5}; <br>
+                    var b={...a}; <br>
+                    b.pop();
+
+                    print both a and b we get
+
+                    <div class="output">
+                        a <br>
+                        >{1,2,3,4,5} <br>
+                        b <br>
+                        >{1,2,3,4}
+                    </div>
+                </div>
+            </div>
+
+            <div class="consditionals">
+                <b>conditionals</b> - when we have to give conditions we use if else, else-if.<br>
+
+                <b>Truthy and falsy</b> - 0, false, NaN, undefined, null document.all these all are falsy values.
+                Everything other than this is truthy value. <br>
+
+                <b>switch</b> - Switch is also conditional statement, used for giving condithions.
+            </div>
+
+            <div class="loops-section">
+                <b>loops</b> - we use it when we have to do samething again and again we repeat same code, to replace
+                repetation of code we use loop, it optimize our code.<br>
+                <ul class="list">
+                    <li>for loop</li>
+                    <li>while loop</li>
+                    <li>do while loop</li>
+                </ul>
+
+                <b>foreach forin do-while</b> - foreach loop only used for array, change happens is temporary.
+
+                <div class="example">
+                    var a ={1,2,23,34,34,4,23,4,3,45,54,3,23}; <br>
+                    a.forEach(function(val){ <br>
+                    console.log(val+2); <br>
+                    })
+
+                    <div class="output">
+                        3 4 25 36 36 6 25 6 47 58 5 25
+                    </div>
+                </div>
+
+                <b>forin</b> -used in objects.
+                <div class="example">
+                    var obj ={ <br>
+                    name: "Nidhi", <br>
+                    age: 22, <br>
+                    city: "bhopal" <br>
+                    } <br>
+                    <br>
+                    for(var key in obj){ <br>
+                    console.log(obj[key]); <br>
+                    console.log(key, obj[key]); <br>
+                    }
+                    <div class="output">
+                        harsh <br>
+                        24 <br>
+                        bhopal <br>
+                        <br>
+                        name harsh <br>
+                        age 24 <br>
+                        city bhopal
+                    </div>
+                </div>
+            </div>
+
+            <div class="function-section">
+                <b>function</b> - Function is a block of code that perform some task. functions are used when you want
+                to perform same task with different data. we give name to our function and whenever we want that
+                function we can call by that name and it will perform the task. <br>
+
+                <b>arguments</b> - Real values that we pass on functions <br>
+
+                <b>Parameter</b> - variables where values of arguments get stored<br>
+
+                <b>Call by functions</b> - It is also a function which is exicuted when its work is done. <br>
+
+                <b>first class functions</b> -we can use a function as a value.
+                <div class="example">
+                    function abcd(a){ <br>
+                    a(); <br>
+                    } <br>
+                    <br>
+                    abcd(function(){console.log("hello");}) <br>
+
+                    <div class="output">
+                        hello
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrays-section">
+                <b>Arrays</b> - can store more that one values of same type. Arrays value is stores in contiguous
+                manner(one after one) in memory.
+
+                <div class="example">
+                    var arr=[10,11,12,13];
+                </div>
+                <div class="note">
+                    jS converts arry into objects, It can hold values at negative index.
+                </div>
+                <b>push</b> - add value,<br>
+
+                <div class="example"> arr.push(7); <br>
+                    console.log(arr);
+                    <div class="output">
+                        {10,11,12,13,7}
+                    </div>
+                </div>
+
+                <b>pop</b> - removes value
+
+                <div class="example"> arr.pop(); <br>
+                    console.log(arr);
+                    <div class="output">
+                        {10,11,12,13}
+                    </div>
+                </div>
+
+                <b>unshift</b> - add value at front (at index 0)
+
+                <div class="example"> arr.unshift(8); <br>
+                    console.log(arr);
+                    <div class="output">
+                        {8,10,11,12,13}
+                    </div>
+                </div>
+
+                <b>shift</b> - add value at front (from index 0)
+
+                <div class="example"> arr.shift(7); <br>
+                    console.log(arr);
+                    <div class="output">
+                        {10,11,12,13}
+                    </div>
+                </div>
+
+                <b>splice</b> - used to remove from in between. slice of value gets removed.
+
+                <div class="example"> arr.splice(2, 2); <br>
+                    //will remove from 2nd index and will remove 2 values from 2nd index<br>
+                    console.log(arr);
+                    <div class="output">
+                        {10,11}
+                    </div>
+                </div>
+            </div>
+
+            <div class="objects-section">
+                <b>Object</b> - blueprint from which many class can.  <br>
+                
+                <b>properties vs methods</b> - object have some properties and those properties whose value is a function is methode.<br>
+
+                <b>Deleting object props</b> - we use delete for it.
+                <div class="example">
+                    var a={ <br>
+                        name: "Nidhi", <br>
+                        age: 23 <br>
+                    } <br>
+                    <br>
+                    delete a.age; <br>
+
+                    <div class="output">
+                       { name: 'Nidhi' }
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+</body>
+
+</html>
